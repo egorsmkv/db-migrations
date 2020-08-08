@@ -11,7 +11,7 @@ composer install
 
 touch db.sqlite
 
-cp .env.example .env # and change the environment variables
+cp .env.example .env # and change the environment variables with real credentials of your databases
 
 php artisan migrate:install
 ```
@@ -46,4 +46,10 @@ php artisan migrate
 
 ```
 php artisan migrate:rollback
+```
+
+## Check status of your migrations
+
+```
+php artisan migrate:status
 ```
