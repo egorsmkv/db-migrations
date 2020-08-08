@@ -16,6 +16,17 @@ cp .env.example .env # and change the environment variables
 php artisan migrate:install
 ```
 
+## Run demo
+
+```
+docker-compose up -d
+
+php artisan migrate
+```
+
+After those two commands go to http://0.0.0.0:8088/ and http://0.0.0.0:8089/ to see databases with applied migrations.
+The credentials in the `docker-compose.yml` file.
+
 ## Make migrations
 
 ```
