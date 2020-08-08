@@ -18,6 +18,9 @@ php artisan migrate:install
 
 ## Run demo
 
+The repository has a few of migrations for MySQL and PostgreSQL databases. Run the databases first and then apply created migrations to see
+the project in action.
+
 ```
 docker-compose up -d
 
